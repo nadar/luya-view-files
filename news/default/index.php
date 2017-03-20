@@ -1,5 +1,4 @@
 <?php
-use Yii;
 use yii\widgets\LinkPager;
 
 /* @var $this \luya\web\View */
@@ -11,7 +10,7 @@ use yii\widgets\LinkPager;
     <h2><?= $item->title; ?></h2>
     <div class="row">
         <div class="col-md-8">
-            <?= $item->teaser_text; ?>
+            <?= $item->text; ?>
         </div>
         <div class="col-md-4">
             <?php if (($image = Yii::$app->storage->getImage($item->image_id))): ?>
